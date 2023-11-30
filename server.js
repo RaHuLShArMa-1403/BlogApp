@@ -6,7 +6,7 @@ const app = express();
 const PORT = 3000;
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost/blog_app', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://rahul1123:rahul3211@cluster0.sn8bvcy.mongodb.net/blog?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection error:'));
 mongoose.set('useFindAndModify', false);
 
